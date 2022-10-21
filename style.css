@@ -1,7 +1,15 @@
 /* -------  General Styles ------- */
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Lato", sans-serif;
+  text-align: justify;
 }
 
 h2 {
@@ -31,7 +39,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -39,6 +47,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -58,10 +67,22 @@ header {
   text-align: center;
 }
 
+
 .logo {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav{
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -83,16 +104,27 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 form label {
   font-weight: bold;
+  flex: 1;
+  padding-right: 10px;
+  display: inline-block;
+  width: 120px;
+  
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  flex: 1;
+  padding-left: 10px;
+  
 }
 
 form button {
@@ -102,6 +134,8 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+  flex: 1;
+  cursor: pointer;
 }
 
 /* -------  Footer ------- */
@@ -117,3 +151,54 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+/*for desktop*/
+
+@media all and (min-width: 480px){
+
+  /*-------header design-----*/
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h2{
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav{
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover{
+    color: #bdbdbd;
+  }
+/*-----text and photos----*/
+  .group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+/*----- Ideas section with 2*2 grid------*/
+
+#ideas .group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#ideas .item{
+  flex: 0 45%;
+  position: relative;
+  margin-right: 0;
+  padding-right: 0;
+}
+}
