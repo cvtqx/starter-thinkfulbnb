@@ -178,15 +178,20 @@ footer p {
   }
 
   header .logo{
+    flex: 1;
     margin: 14px 0;
     padding-top: 0;
     text-align: left;
+    font-size: 3rem;
   }
 
   header nav{
+    flex:1;
     margin-top: 25px;
     justify-content: flex-end;
   }
+
+
 
   /*-----form----*/
 
