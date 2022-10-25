@@ -226,14 +226,14 @@ footer p {
 }
 /*----- Ideas section with 2*2 grid------*/
 
-#ideas > .group{
+#ideas .group{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-#ideas > .item{
+#ideas .item{
   flex: 0 45%;
   position: relative;
   margin-right: 0;
