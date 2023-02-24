@@ -4,6 +4,8 @@ Thinkfulbnb is a vacation rental website that allows people to rent out their ho
 
 The page is implemented in HTML & CSS.
 
+- See this project on Github pages: https://cvtqx.github.io/starter-thinkfulbnb/
+
 ## Globetrotter views
 
 ### Mobile view
